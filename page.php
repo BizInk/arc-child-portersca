@@ -24,8 +24,9 @@
                 <h3>
                   <?= get_field('sidebar_menu_title') ?>
                 </h3>
-              <?php endif; ?>
-              <?= get_field('sidebar_menu_menu') ?>
+              <?php endif; 
+              wp_nav_menu(array('menu' => get_field('sidebar_menu_menu')));
+              ?>
             </div>
           <?php endif; ?>
           
